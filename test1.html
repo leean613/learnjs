@@ -1,0 +1,33 @@
+<html>
+<head> i just right here
+  <title>getElementById example</title>
+</head>
+<body>
+   <script>
+       function changeColor(newColor) {
+        var elem = document.getElementById('para');
+        elem.style.color = newColor;
+        
+        
+         //console.log(elem);
+        const paragraphs = document.getElementsByTagName("p");
+// paragraphs[0] is the first <p> element
+// paragraphs[1] is the second <p> element, etc.
+/*   for(let i of paragraphs.length)    
+  console.log(paragraphs[i].innerHTML); */
+  alert(window.innerHeight);
+}
+   </script> 
+  <p id="para">Some text here
+    <p id="para-con">
+      and here
+    </p>
+  </p>
+  <button onclick="changeColor('blue');">blue</button>
+  <button onclick="changeColor('red');">red</button>
+   <p id="para2">para 1</p>
+   <p id="para3">2 da</p>
+   <p id="para4">3 db</p>
+   <p id="para5">4dc</p>
+  </body>
+</html>
